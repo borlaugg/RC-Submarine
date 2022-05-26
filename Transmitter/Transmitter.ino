@@ -30,59 +30,35 @@ void setup() {
 }
 
 void loop() {
-  if (FwdBtn.isPressed())
+  digitalWrite(Fwd,LOW);
+  digitalWrite(Bwd,LOW);
+  digitalWrite(Left,LOW);
+  digitalWrite(Right,LOW);
+  digitalWrite(HeaveUp,LOW);
+  digitalWrite(HeaveDown,LOW);
+  while (FwdBtn.isPressed())
   {
     digitalWrite(Fwd,HIGH);
-    digitalWrite(Bwd,LOW);
-    digitalWrite(Left,LOW);
-    digitalWrite(Right,LOW);
-    digitalWrite(HeaveUp,LOW);
-    digitalWrite(HeaveDown,LOW);
   }
-  else if (BwdBtn.isPressed())
+  while (BwdBtn.isPressed())
   {
-    digitalWrite(Fwd,LOW);
     digitalWrite(Bwd,HIGH);
-    digitalWrite(Left,LOW);
-    digitalWrite(Right,LOW);
-    digitalWrite(HeaveUp,LOW);
-    digitalWrite(HeaveDown,LOW);
   }
-  else if (LeftBtn.isPressed())
+  while (LeftBtn.isPressed())
   {
-    digitalWrite(Fwd,LOW);
-    digitalWrite(Bwd,LOW);
     digitalWrite(Left,HIGH);
-    digitalWrite(Right,LOW);
-    digitalWrite(HeaveUp,LOW);
-    digitalWrite(HeaveDown,LOW);
   }
-  else if (RightBtn.isPressed())
+  while (RightBtn.isPressed())
   {
-    digitalWrite(Fwd,LOW);
-    digitalWrite(Bwd,LOW);
-    digitalWrite(Left,LOW);
     digitalWrite(Right,HIGH);
-    digitalWrite(HeaveUp,LOW);
-    digitalWrite(HeaveDown,LOW);
   }
-  else if (HeaveUpBtn.isPressed())
+  while (HeaveUpBtn.isPressed())
   {
-    digitalWrite(Fwd,LOW);
-    digitalWrite(Bwd,LOW);
-    digitalWrite(Left,LOW);
-    digitalWrite(Right,LOW);
     digitalWrite(HeaveUp,HIGH);
-    digitalWrite(HeaveDown,LOW);
   }
   
-  else if (HeaveDownBtn.isPressed())
+  while (HeaveDownBtn.isPressed())
   {
-    digitalWrite(Fwd,LOW);
-    digitalWrite(Bwd,LOW);
-    digitalWrite(Left,LOW);
-    digitalWrite(Right,LOW);
-    digitalWrite(HeaveUp,LOW);
     digitalWrite(HeaveDown,HIGH);
   }
   
